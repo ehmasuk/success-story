@@ -38,7 +38,9 @@
     height: 550px;
     object-fit: contain;
 }
-
+.success-showcase{
+    padding: 100px 0;
+}
 .success-showcase .title {
     font-family: "Noto Sans JP", serif;
     font-size: 35px;
@@ -68,7 +70,7 @@
     font-size: 16px;
 }
 .single-success {
-    margin-top: 20px;
+    margin-bottom: 40px;
 }
 .single-success img {
     max-height: 200px;
