@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="Description" content="Enter your description here" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&family=Playfair+Display:wght@400;500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600&family=Oswald:wght@200;300;400;500;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <title>success</title>
+    </head>
+    <body>
+        <div class="success-show-result">
+            <div class="container">
+                <p class="sub-title">Objetivo</p>
+                <p class="main-title">Escribir una historia capaz de conectar con los lectores y establecer la marca de la autora.</p>
+            </div>
+        </div>
+        <div class="success-show-author">
+            <div class="container">
+                <div class="auth-image">
+                    <img src="https://m.media-amazon.com/images/S/amzn-author-media-prod/35ckrmnbr0dkj5msriegptekhi._SY600_.jpg" alt="" />
+                </div>
+                <p class="auth-name">Analida Ospina</p>
+                <p class="main-des">
+                    Análida Ospina, nací en Medellín, Colombia, 1965. Abogada. Escritora desde muy temprana edad. El ejercicio de mi profesión me obligó a dejar aparcada la escritura mucho tiempo,
+                    aunque mi primer marido era editor y me animaba a escribir, no tuve la ocasión para dedicarme a ello.
+                </p>
+            </div>
+        </div>
+        <div class="success-show-section">
+            <div class="container-lg">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p class="sub-title">LA HISTORIA</p>
+                        <p class="main-title">La historia de Laura viaja a Nueva York y Boston para seguir cautivando a los lectores</p>
+                        <p class="main-des">
+                            Una ciudad en la que nadie se encuentra a salvo <br />
+                            Cuando parece que comprendemos la situación, la escritora nos sorprende una vez más con un giro imprevisible. Analida Ospina comparte en su obra la pasión por Medellín.
+                            Refleja con maestría la situación del país a finales de los años ochenta. <br />
+                            La noche de las velitas, es la historia de Laura, pero también es la historia de Nacho, de Humberto, de Lolita, de El Gallo, de Emilia y de todos los personajes que la
+                            acompañan a lo largo de esos años vividos en Medellín, donde la línea entre el bien y el mal trazada por la corrupción y el narcotráfico era tan difusa, que nadie estaba
+                            seguro de si hacía lo correcto. Todos serán víctimas de la violencia que vivió Colombia a finales de la década de los ochenta y principios de los noventa del siglo pasado
+                            debido al narcotráfico, una lacra que permeó todas las capas de la sociedad
+                        </p>
+                        <pre></pre>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <img src="https://m.media-amazon.com/images/I/91PZrgPbuWL._SY466_.jpg" alt="any" class="img-fluid" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="success-show-target">
+            <div class="container">
+                <p class="sub-title">Resultados</p>
+                <p class="main-title">Más de 250 obras vendidas en las primeras 4 semanas y una cálida acogida por parte de lectores radicados en Colombia y Norteamérica.</p>
+            </div>
+        </div>
+
+        <!-- <video id="video-to-track" src="https://res.cloudinary.com/saymoinsam/video/upload/v1541676544/ABeautifulMind.mp4" controls width="300" height="200"></video> -->
+
+        <script>
+            document.querySelector("#video-to-track").onclick = function () {
+                var video = this;
+                var duration = video.duration;
+                var watchedDuration = 0;
+
+                for (var i = 0; i < video.played.length; i++) {
+                    watchedDuration += video.played.end(i) - video.played.start(i);
+                }
+
+                var percentageWatched = (watchedDuration / duration) * 100;
+
+                if (percentageWatched >= 100) {
+                    console.log("Played all");
+                } else {
+                    console.log("Percentage of video watched: " + percentageWatched.toFixed(2) + "%");
+                }
+            };
+        </script>
+    </body>
+</html>
